@@ -1,6 +1,6 @@
-export function MoviesData() {
+export function CitiesData() {
     return [
-        { "title": "The Shawshank Redemption", "rank": "1", "id": "tt0111161" },
+        { "title": " Shawshank Redemption", "rank": "1", "id": "tt0111161" },
         { "title": "The Godfather", "rank": "2", "id": "tt0068646" },
         { "title": "The Godfather: Part II", "rank": "3", "id": "tt0071562" },
         { "title": "Pulp Fiction", "rank": "4", "id": "tt0110912" },
@@ -76,7 +76,7 @@ export function MoviesData() {
     ]
 }
 
-export function renderMovieTitle(state, val) {
+export function renderCityName(state, val) {
     return (
         state.title.toLowerCase().indexOf(val.toLowerCase()) !== -1
     );

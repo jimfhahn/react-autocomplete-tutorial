@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MoviesData, renderMovieTitle } from './movies-data';
+import { CitiesData, renderCityName } from './cities-data';
 import Autocomplete from 'react-autocomplete';
 import './App.css';
 
@@ -13,9 +13,9 @@ class App extends Component {
         <h3>React Autocomplete Demo</h3>
         <Autocomplete
           value={this.state.val}
-          items={MoviesData()}
+          items={CitiesData()}
           getItemValue={item => item.title}
-          shouldItemRender={renderMovieTitle}
+          shouldItemRender={renderCityName}
           renderMenu={item => (
             <div className="dropdown">
               {item}
